@@ -1,0 +1,15 @@
+{
+  "name": "wasm-gallery",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "wasm_gallery_bg.wasm",
+    "wasm_gallery.js",
+    "wasm_gallery.d.ts"
+  ],
+  "main": "wasm_gallery.js",
+  "types": "wasm_gallery.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
