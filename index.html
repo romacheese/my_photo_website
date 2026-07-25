@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASM Photo Gallery</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script type="module">
+        import init from './pkg/wasm_gallery.js';
+        
+        // Run the init function. Once loaded, it automatically triggers your Rust `run()` function.
+        init();
+    </script>
+</body>
+</html>

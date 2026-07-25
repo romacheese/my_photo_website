@@ -1,0 +1,23 @@
+[package]
+name = "wasm-gallery"
+version = "0.1.0"
+edition = "2024"
+
+# This tells Rust to compile a dynamic system library, which WASM requires.
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+
+# web-sys provides bindings to Web APIs. We explicitly enable the features we need.
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  'Document',
+  'Element',
+  'HtmlElement',
+  'Node',
+  'Window',
+]
+
